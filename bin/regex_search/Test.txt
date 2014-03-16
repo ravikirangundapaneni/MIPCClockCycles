@@ -1,0 +1,6 @@
+LD        F0, 0(R1)
+ADD.D     F4, F0, F2
+SD       0(R1), F4
+SUBI      R1, R1, #8
+AND       R1, R2, R3
+BNEZ      R1, Loop
